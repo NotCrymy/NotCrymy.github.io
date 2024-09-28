@@ -10,11 +10,14 @@
     <!-- Lien vers le CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Lien vers le fichier style.css -->
-    <link href="style/style.css" rel="stylesheet">
+    <link href="MyWebsite/style/style.css" rel="stylesheet">
   </head>
 
   <body class="d-flex h-100 text-center text-bg-dark">
-    <!-- Conteneur principal -->
+    <!-- Div pour les particules, placé en arrière-plan -->
+    <div id="particles-js"></div>
+
+    <!-- Conteneur principal (contenu de la page) -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <!-- Header -->
       <header class="mb-auto">
@@ -43,7 +46,10 @@
       </footer>
     </div>
 
-    <!-- Lien vers le fichier script.js -->
-    <script src="script/script.js"></script>
+    <!-- Lien vers la bibliothèque particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Lien vers ton fichier JavaScript -->
+    <script src="MyWebsite/script/script.js"></script>
   </body>
 </html>

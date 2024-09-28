@@ -48,5 +48,20 @@ body {
       font-size: 3.5rem;
     }
   }
-/* Pour ajouter d'autres styles personnalisés */
+  /* Styles pour le conteneur des particules */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Les particules sont en arrière-plan */
+  }
+
+  /* Styles pour le contenu principal */
+  .cover-container {
+    position: relative; /* Le contenu est au-dessus des particules */
+    z-index: 1; /* Le contenu doit être au-dessus des particules */
+  }
+
   
