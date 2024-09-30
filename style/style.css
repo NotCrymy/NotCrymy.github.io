@@ -1,14 +1,9 @@
 /* Styles globaux */
-body {
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  }
-  
+
   /* Couverture principale */
   .cover-container {
     max-width: 42em;
   }
-
 
   /* Customisation des boutons */
   .btn-light,
@@ -16,6 +11,11 @@ body {
   .btn-light:focus {
     color: #333;
     text-shadow: none;
+  }
+
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   /* Header et navigation */
@@ -43,15 +43,10 @@ body {
     text-anchor: middle;
     user-select: none;
   }
-  
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
+
   /* Styles pour le conteneur des particules */
   #particles-js {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -62,7 +57,24 @@ body {
   /* Styles pour le contenu principal */
   .cover-container {
     position: relative; /* Le contenu est au-dessus des particules */
-    z-index: 1; /* Le contenu doit être au-dessus des particules */
+    z-index: 1; 
   }
+
+  /* Style de base pour l'animation des sections */
+  .slide-in-left, .slide-in-right {
+    opacity: 0;
+    transform: translateX(20px); /* Pour les sections qui viennent de la droite */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .slide-in-left {
+    transform: translateX(-20px); /* Pour les sections qui viennent de la gauche */
+  }
+
+  .visible {
+    opacity: 1;
+    transform: translateX(0); /* Ramène la section à sa position originale */
+  }
+
 
   

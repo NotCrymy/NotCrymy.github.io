@@ -104,5 +104,29 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       "retina_detect": true
     });
+
+    // Fonction pour les sections avec style venant de gauche / droite
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    
+    function animateOnScroll() {
+      const elements = document.querySelectorAll('.slide-in-left, .slide-in-right');
+      elements.forEach(el => {
+        if (isElementInViewport(el)) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+    
   });
   
