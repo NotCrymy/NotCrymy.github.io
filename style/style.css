@@ -2,7 +2,6 @@
 
 /* Couverture principale */
 .cover-container {
-  max-width: 42em;
   position: relative; /* Le contenu est au-dessus des particules */
   z-index: 1; 
 }
