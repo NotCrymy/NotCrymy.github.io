@@ -1,80 +1,79 @@
 /* Styles globaux */
 
-  /* Couverture principale */
-  .cover-container {
-    max-width: 42em;
-  }
+/* Couverture principale */
+.cover-container {
+  max-width: 42em;
+  position: relative; /* Le contenu est au-dessus des particules */
+  z-index: 1; 
+}
 
-  /* Customisation des boutons */
-  .btn-light,
-  .btn-light:hover,
-  .btn-light:focus {
-    color: #333;
-    text-shadow: none;
-  }
+/* Customisation des boutons */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none;
+}
 
-  section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  /* Header et navigation */
-  .nav-masthead .nav-link {
-    color: rgba(255, 255, 255, .5);
-    border-bottom: .25rem solid transparent;
-  }
-  
-  .nav-masthead .nav-link:hover,
-  .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
-  }
-  
-  .nav-masthead .nav-link + .nav-link {
-    margin-left: 1rem;
-  }
-  
-  .nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
-  }
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    user-select: none;
+/* Header et navigation */
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+/* Styles pour le conteneur des particules */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Les particules sont en arrière-plan */
+}
+
+/* Style de base pour l'animation des sections */
+.slide-in-left, .slide-in-right {
+  opacity: 0;
+  transform: translateX(20px); /* Pour les sections qui viennent de la droite */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left {
+  transform: translateX(-20px); /* Pour les sections qui viennent de la gauche */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0); /* Ramène la section à sa position originale */
+}
+
+@media (max-width: 768px) {
+  .nav {
+      margin-top: 10px; /* Ajouter un peu d'espacement entre le titre et la navigation */
   }
-
-  /* Styles pour le conteneur des particules */
-  #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Les particules sont en arrière-plan */
-  }
-
-  /* Styles pour le contenu principal */
-  .cover-container {
-    position: relative; /* Le contenu est au-dessus des particules */
-    z-index: 1; 
-  }
-
-  /* Style de base pour l'animation des sections */
-  .slide-in-left, .slide-in-right {
-    opacity: 0;
-    transform: translateX(20px); /* Pour les sections qui viennent de la droite */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-
-  .slide-in-left {
-    transform: translateX(-20px); /* Pour les sections qui viennent de la gauche */
-  }
-
-  .visible {
-    opacity: 1;
-    transform: translateX(0); /* Ramène la section à sa position originale */
-  }
-
-
-  
+}

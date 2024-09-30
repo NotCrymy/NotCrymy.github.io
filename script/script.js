@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#000000"
+            "color": "#0000ff"
           },
           "polygon": {
             "nb_sides": 5
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "line_linked": {
           "enable": true,
           "distance": 150,
-          "color": "#ffffff",
+          "color": "#00bbff",
           "opacity": 0.4,
           "width": 1
         },
