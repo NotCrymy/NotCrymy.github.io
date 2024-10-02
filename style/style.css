@@ -99,12 +99,12 @@ section {
 /* Style de base pour l'animation des sections */
 .slide-in-left, .slide-in-right {
   opacity: 0;
-  transform: translateX(20px); /* Pour les sections qui viennent de la droite */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateX(15px); /* Pour les sections qui viennent de la droite */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .slide-in-left {
-  transform: translateX(-20px); /* Pour les sections qui viennent de la gauche */
+  transform: translateX(-15px); /* Pour les sections qui viennent de la gauche */
 }
 
 .visible {
