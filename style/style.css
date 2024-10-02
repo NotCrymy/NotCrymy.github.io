@@ -27,17 +27,17 @@ li.custom-item {
 }
 
 li.custom-item a {
-  text-decoration: none;  /* Remove underline from links */
-  color: #ffffff;            /* Set link color to black */
+  text-decoration: none;  
+  color: #ffffff;            
 }
 
 li.custom-item a:hover {
-  text-decoration: underline; /* Optional: Underline on hover */
+  font-weight: bold;
   color: #00d2f2;             /* Optional: Change color on hover */
 }
 
 li.custom-item:hover {
-  background-color: #e0e0e0;
+  background-color: #000000;
   cursor: pointer;
 }
 
