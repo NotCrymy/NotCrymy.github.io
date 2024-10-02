@@ -1,4 +1,3 @@
-// Initialisation de particles.js après le chargement de la page
 document.addEventListener("DOMContentLoaded", function() {
     particlesJS("particles-js", {
       "particles": {
@@ -124,9 +123,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-    
-    window.addEventListener('scroll', animateOnScroll);
-    window.addEventListener('load', animateOnScroll);
+  window.addEventListener('scroll', animateOnScroll);
+  window.addEventListener('load', animateOnScroll);
     
   });
   
