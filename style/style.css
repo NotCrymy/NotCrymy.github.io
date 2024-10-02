@@ -18,16 +18,19 @@ ul.custom-list {
 }
 
 li.custom-item {
-  padding: 10px;  
-  margin-bottom: 5px;
-  border: 1px solid #00ddf6;
-  border-radius: 5px;
+  padding: 15px;  
+  margin-bottom: 10px;
+  border: 2px solid #00ddf6;
+  border-radius: 10px;
   transition: all 0.5s ease;
-  animation: borderColorChange 3s infinite linear
+  animation: borderColorChange 2s infinite linear;
 }
 
 li.custom-item a {
   text-decoration: none;  
+  display: block; 
+  height: 100%;
+  width: 100%;  
   color: #ffffff;            
 }
 
