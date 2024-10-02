@@ -126,5 +126,14 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', animateOnScroll);
   window.addEventListener('load', animateOnScroll);
     
+  // Select all li elements with the custom-item class
+  const listItems = document.querySelectorAll('.custom-item');
+
+  // Apply new styles with a slight delay for an animated effect
+  listItems.forEach(function(item, index) {
+    setTimeout(function() {
+      item.style.animation = 'borderColorChange 3s infinite linear';
+    }, index * 500);  // Delay each item by 500ms
   });
+});
   

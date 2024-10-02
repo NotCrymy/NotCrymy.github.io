@@ -7,18 +7,18 @@
     <meta name="author" content="Clément">
     <title>NotCrymy</title>
 
-    <!-- Lien vers le CSS Bootstrap -->
+    <!-- style link CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Lien vers le fichier style.css -->
+    <!-- style link style.css -->
     <link href="style/style.css" rel="stylesheet">
   </head>
 
   <body class="d-flex h-100 text-center text-bg-dark">
-    <!-- Div pour les particules-->
+    <!-- Div particules-->
     <div id="particles-js"></div>
 
-    <!-- Conteneur principal (contenu de la page) -->
+    <!-- main container  -->
     <div class="cover-container container-sm d-flex w-100 h-100 mt-2 p-3 mx-auto flex-column">
       <!-- Header -->
       <header class="mb-5">
@@ -31,27 +31,43 @@
         </div>
       </header>   
 
-      <!-- Contenu principal -->
+      <!-- main content -->
       <main class="px-10 my-5">
         <h1>Welcome on my website.</h1>
         <p class="lead">Here I post severals things like my medias, the projects that I do or that I am working on, eventually also those I plan to do in the future.</p>
       </main>
 
       <div class="container-fluid my-5">
-        <section id="about-me">
-          <h2 class="text">About Me</h2>
-          <p>I'm a passionate developer interested in computer science, IA, cybersecurity. I love working on projects that challenge me and help me expanding my skills.</p>
-        </section>
+        <div class="row">
+          <div class="col-md-6">
+            <section id="about-me">
+              <h2 class="text">About Me</h2>
+              <p>I'm a passionate developer interested in computer science, IA, cybersecurity. I love working on projects that challenge me and help me expand my skills.</p>
+            </section>
+          </div>
+          <div class="col-md-6">
+            <section id="media">
+              <h2 class="text my-2 mx-2">My media</h2>
+              <h4 class="my-4">Here are all the links to my media</h4>
+              <ul class="custom-list">
+                <li class="custom-item"><a href="https://github.com/NotCrymy/">My GitHub</a></li>
+                <li class="custom-item"><a href="https://www.root-me.org/Not_Crymy">My Root-me</a></li>
+                <li class="custom-item"><a href="https://www.youtube.com/@crymy8224">My Youtube</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
       </div>
+      
 
       <div class="container my-5">
-        <section id="projects">
-          <h2>My Projects</h2>
-          <ul>
-            <li><a href="https://github.com/NotCrymy/Website-JO-fr-school-project">Website-JO</a> - A custom web-site which is the first website I made for school about the 2024 Paris Olympics</li>
-            <li><a href="https://github.com/NotCrymy/UnlockGame-SchoolProject">UnlockGame-Like</a> - A game in JAVAFX based on the escape game / card-game called "unlock".</li>
-          </ul>
-        </section>
+          <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+              <li><a href="https://github.com/NotCrymy/Website-JO-fr-school-project">Website-JO</a> - A custom web-site which is the first website I made for school about the 2024 Paris Olympics</li>
+              <li><a href="https://github.com/NotCrymy/UnlockGame-SchoolProject">UnlockGame-Like</a> - A game in JAVAFX based on the escape game / card-game called "unlock".</li>
+            </ul>
+          </section>
       </div>
 
       <div class="container my-5">

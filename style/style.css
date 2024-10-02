@@ -1,5 +1,46 @@
 /* Styles globaux */
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li.custom-item {
+  padding: 10px;  
+  margin-bottom: 5px;
+  border: 1px solid #00ddf6;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  animation: borderColorChange 3s infinite linear
+}
+
+li.custom-item a {
+  text-decoration: none;  /* Remove underline from links */
+  color: #ffffff;            /* Set link color to black */
+}
+
+li.custom-item a:hover {
+  text-decoration: underline; /* Optional: Underline on hover */
+  color: #00d2f2;             /* Optional: Change color on hover */
+}
+
+li.custom-item:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
 /* Couverture principale */
 .cover-container {
   position: relative; /* Le contenu est au-dessus des particules */
@@ -74,5 +115,17 @@ section {
 @media (max-width: 768px) {
   .nav {
       margin-top: 10px; /* Ajouter un peu d'espacement entre le titre et la navigation */
+  }
+}
+
+@keyframes borderColorChange {
+  0% {
+    border-color: #ffffff;  /* Start color */
+  }
+  50% {
+    border-color: #00e1ff;  /* Second color */
+  }
+  100% {
+    border-color: #ffffff;
   }
 }
