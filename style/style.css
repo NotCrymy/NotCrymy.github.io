@@ -34,7 +34,6 @@ a {
 /* Style for <a> links when hovered */
 a:hover {
   color: #ffffff; /* Change color on hover */
-  border-bottom: 2px solid #ffffff; /* Show border on hover */
 }
 
 
