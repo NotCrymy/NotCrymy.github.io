@@ -1,5 +1,43 @@
 /* Styles globaux */
 
+/* Style font */
+body {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 400; /* Regular par défaut */
+}
+
+/* title */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 700; /* Bold*/
+  color: #ffffff;
+}
+
+/* p */
+p {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-weight: 300; /* Light */
+  color: #dcdcdc;
+}
+
+/* Default style for all <a> links */
+a {
+  font-family: "Encode Sans Semi Expanded", sans-serif; /* Use your chosen font */
+  font-weight: 500; /* Medium weight for links */
+  color: #00d2f2; /* Custom link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions for hover effects */
+  border-bottom: 2px solid transparent; /* Add a bottom border (hidden by default) */
+  padding-bottom: 2px;
+}
+
+/* Style for <a> links when hovered */
+a:hover {
+  color: #ffffff; /* Change color on hover */
+  border-bottom: 2px solid #ffffff; /* Show border on hover */
+}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -36,7 +74,7 @@ li.custom-item a {
 
 li.custom-item a:hover {
   font-weight: bold;
-  color: #00d2f2;             /* Optional: Change color on hover */
+  color: #00d2f2; /* Optional: Change color on hover */
 }
 
 li.custom-item:hover {
