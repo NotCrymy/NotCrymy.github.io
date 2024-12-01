@@ -133,7 +133,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0; /* Les particules sont en arrière-plan */
+  z-index: -1; /* Les particules sont en arrière-plan */
 }
 
 /* Style de base pour l'animation des sections */

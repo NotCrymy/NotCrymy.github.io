@@ -35,18 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         out_mode: "out",
       },
     },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
-        resize: true,
-      },
-      modes: {
-        repulse: { distance: 100, duration: 0.4 },
-        push: { particles_nb: 10 },
-      },
-    },
     retina_detect: true,
   });
 
